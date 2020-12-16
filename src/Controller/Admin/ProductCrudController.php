@@ -24,9 +24,9 @@ class ProductCrudController extends AbstractCrudController
         return [
             TextField::new('name'),
             SlugField::new('slug')->setTargetFieldName('name'),
-            ImageField::new('illustration'),
+            ImageField::new('illustration')
             
-                
+                ->setRequired(false),
             TextField::new('subtitle'),
             TextareaField::new('description'),
             BooleanField::new('isBest'),
