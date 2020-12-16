@@ -5,11 +5,5 @@
 #        - App\Entity\Category
 #        - App\Entity\User
 # config/packages/easy_admin.yaml
-easy_admin:
-    entities:
-        Product:
-            - App\Entity\Product
-            form:
-                fields:
-                    - { property: 'illustration', type: 'file' }
-            # ...
+
+            
