@@ -30,7 +30,7 @@ class ProductCrudController extends AbstractCrudController
 
             ->setUploadedFileNamePattern('[randomhash].[extension]')
             
-            ->setFormTypeOptions(['required' => false]),
+            ->setFormTypeOptions(['mapped' => false, 'required' => false]),
             TextField::new('subtitle'),
             TextareaField::new('description'),
             BooleanField::new('isBest'),
