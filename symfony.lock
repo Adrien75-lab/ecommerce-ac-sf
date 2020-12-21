@@ -79,13 +79,17 @@
         "version": "1.1.1"
     },
     "easycorp/easyadmin-bundle": {
-        "version": "3.0",
+        "version": "2.0",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "master",
-            "version": "3.0",
-            "ref": "b131e6cbfe1b898a508987851963fff485986285"
-        }
+            "version": "2.0",
+            "ref": "0a51040a43c6f2172a3a0135cd15daf2043905d7"
+        },
+        "files": [
+            "config/packages/easy_admin.yaml",
+            "config/routes/easy_admin.yaml"
+        ]
     },
     "egulias/email-validator": {
         "version": "2.1.20"
@@ -112,7 +116,7 @@
         "version": "2.2.3"
     },
     "php": {
-        "version": "7.2"
+        "version": "7.3"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.2.0"
@@ -161,18 +165,6 @@
     },
     "stripe/stripe-php": {
         "version": "v7.57.0"
-    },
-    "symfony/apache-pack": {
-        "version": "1.0",
-        "recipe": {
-            "repo": "github.com/symfony/recipes-contrib",
-            "branch": "master",
-            "version": "1.0",
-            "ref": "71599f5b0fdeeeec0fb90e9b17c85e6f5e1350c1"
-        },
-        "files": [
-            "./public/.htaccess"
-        ]
     },
     "symfony/asset": {
         "version": "v5.1.5"
@@ -398,7 +390,7 @@
         "version": "v1.18.1"
     },
     "symfony/polyfill-uuid": {
-        "version": "v1.20.0"
+        "version": "v1.18.1"
     },
     "symfony/process": {
         "version": "v5.1.5"
@@ -505,7 +497,7 @@
         "version": "v1.0.0"
     },
     "symfony/uid": {
-        "version": "v5.1.9"
+        "version": "v5.1.5"
     },
     "symfony/validator": {
         "version": "4.3",
