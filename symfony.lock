@@ -101,5 +101,8 @@
             "@auto-scripts"
         ]
     },
+    "symfony/orm-pack": {
+        "version": "v2.0.0"
+    },
     "type": "project"
 }
