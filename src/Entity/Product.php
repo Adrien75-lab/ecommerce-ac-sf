@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use App\Repository\ProductRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\HttpFoundation\File\File;
 
 /**
  * @ORM\Entity(repositoryClass=ProductRepository::class)
@@ -46,7 +45,7 @@ class Product
     /**
      * @ORM\Column(type="float")
      */
-    private $price;
+    private $prix;
 
     /**
      * @ORM\ManyToOne(targetEntity=Category::class, inversedBy="products")
@@ -124,14 +123,14 @@ class Product
         return $this;
     }
 
-    public function getPrice(): ?float
+    public function getPrix(): ?float
     {
-        return $this->price;
+        return $this->prix;
     }
 
-    public function setPrice(float $price): self
+    public function setPrix(float $prix): self
     {
-        $this->price = $price;
+        $this->prix = $prix;
 
         return $this;
     }
